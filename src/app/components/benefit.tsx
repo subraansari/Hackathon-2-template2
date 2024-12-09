@@ -1,3 +1,6 @@
+
+
+
 import React from 'react'
 
 const Benefit = () => {
@@ -11,12 +14,12 @@ const Benefit = () => {
             </h1>
             <h2 className='text-center py-4 text-sm md:text-base'>
               Sign up for our newsletter and receive exclusive offers on new
-              <br /> ranges, sales, pop up stores, and more
+              <br /> ranges, sales, pop-up stores, and more
             </h2>
             <div className='mt-4 w-full'>
-              <form action="" className='flex flex-col md:flex-row items-center justify-center'>
+              <form className='flex flex-col md:flex-row items-center justify-center'>
                 <input
-                  type="text"
+                  type="email"
                   placeholder="your@email.com"
                   className="p-4 bg-[#F9F9F9] w-full md:w-[354px] h-[56px] outline-none mb-4 md:mb-0"
                 />
