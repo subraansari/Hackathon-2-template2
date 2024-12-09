@@ -1,4 +1,7 @@
+
+
 import React from "react";
+import Image from "next/image";
 
 const About = () => {
   return (
@@ -27,24 +30,28 @@ const About = () => {
           </button>
         </div>
         <div className="w-full md:w-2/5">
-          <img
+          <Image
             src="/About main.png"
             alt="About main"
             className="w-full transition-transform duration-300 ease-in-out hover:scale-105 hover:translate-y-1"
+            width={500}
+            height={300}
           />
         </div>
       </div>
 
       {/* Service Section */}
       <div className="flex flex-col md:flex-row w-full h-auto items-center px-4 py-16 space-y-8 md:space-y-0">
-        <img
+        <Image
           src="/About second.png"
           alt="Service"
           className="w-full md:w-2/5 transition-transform duration-300 ease-in-out hover:scale-105 hover:translate-y-1"
+          width={500}
+          height={300}
         />
         <div className="border-2 bg-[#f9f9f9] w-full md:w-3/5 p-8 md:p-20 h-[552px]">
           <h1 className="text-xl md:text-2xl text-custom-purple">
-            Our service isn&lsquo;t just personal, it&lsquo;s actually hyper-personally exquisite
+            Our service isn’t just personal, it’s actually hyper-personally exquisite
           </h1>
           <p className="text-custom-purple mt-6">
             When we started Avion, the idea was simple. Make high-quality furniture affordable and available for the
@@ -85,10 +92,12 @@ const About = () => {
               key={index}
               className="bg-gray-200 w-72 h-auto rounded-sm px-6 py-8 text-center"
             >
-              <img
+              <Image
                 src={item.img}
                 alt={item.title}
                 className="mx-auto transition-transform duration-300 ease-in-out hover:scale-105 hover:translate-y-1"
+                width={24}
+                height={24}
               />
               <h1 className="text-custom-purple text-lg mt-4">{item.title}</h1>
               <p className="text-custom-purple mt-4">{item.desc}</p>
@@ -110,7 +119,7 @@ const About = () => {
               placeholder="you@gmail.com"
               className="bg-gray-100 w-80 h-12 p-5 rounded-sm"
             />
-            <button className="bg-custom-purple h-12 w-32 rounded-sm text-white">Sign Up</button>
+            <button className="bg-custom-purple h-12 w-32 rounded-sm bg-[#2A254B] text-white">Sign Up</button>
           </div>
         </div>
       </div>
