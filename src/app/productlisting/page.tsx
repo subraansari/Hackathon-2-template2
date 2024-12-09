@@ -1,30 +1,32 @@
+
 import Image from 'next/image';
 import React from 'react';
 import { TbTruckDelivery } from 'react-icons/tb';
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 import { LuSprout } from "react-icons/lu";
-import { MdOutlinePriceChange } from "react-icons/md";
+import { GoCreditCard } from "react-icons/go";
+
 
 const ProductListing = () => {
   const features = [
     {
-      title: 'Next day as standard',
-      description: 'Order before 3pm and get your order the next day as standard.',
+      title: 'Next day delivery',
+      description: 'Order before 3pm to receive your item the next day.',
       icon: TbTruckDelivery,
     },
     {
-      title: 'Made by true artisans',
-      description: 'Hand-crafted goods made with real passion and craftsmanship.',
+      title: 'Crafted with passion',
+      description: 'Handmade with skill and care by true artisans.',
       icon: IoIosCheckmarkCircleOutline,
     },
     {
-      title: 'Unbeatable prices',
-      description: 'For our material and quality, you won’t find better prices anywhere.',
-      icon: MdOutlinePriceChange,
+      title: 'Best value for money',
+      description: 'The best prices for high-quality materials.',
+      icon: GoCreditCard,
     },
     {
-      title: 'Recycled packaging',
-      description: 'We use 100% recycled packaging to ensure our footprint is manageable.',
+      title: 'Eco-friendly packaging',
+      description: 'We use 100% recyclable packaging to reduce our carbon footprint.',
       icon: LuSprout,
     },
   ];
@@ -53,18 +55,16 @@ const ProductListing = () => {
                 <h1 className="font-semibold">Description</h1>
                 <div className="my-4 md:my-6">
                   <p>
-                    A timeless design, with premium materials features as one of our most <br />
-                     popular
-                    and iconic pieces. The dandy chair is perfect for any stylish <br />
-                    living space with
-                    beech legs and lambskin leather upholstery.
+                    A timeless design, crafted from premium materials, this chair is <br />
+                    one of our most iconic pieces. The Dandy Chair fits perfectly into <br />
+                    any stylish living room with beech wood legs and lambskin leather.
                   </p>
                 </div>
                 <div className="ml-4">
                   <ul className="list-disc space-y-1">
-                    <li>Premium material</li>
-                    <li>Handmade upholstery</li>
-                    <li>Quality timeless classic</li>
+                    <li>Premium materials</li>
+                    <li>Handmade craftsmanship</li>
+                    <li>Timeless design</li>
                   </ul>
                 </div>
                 <div>
@@ -102,9 +102,9 @@ const ProductListing = () => {
           </div>
 
           {/* Suggestions Section */}
-          <h1 className="text-xl md:text-2xl font-semibold mt-12 text-[#505977]">You might also like</h1>
+          <h1 className="text-xl md:text-2xl font-semibold mt-12 text-[#505977]">You may also like</h1>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">
-            {['chair', 'vase', 'silky', 'lamp'].map((item, idx) => (
+            {['chair2', 'vase', 'silky', 'lamp'].map((item, idx) => (
               <div key={idx} className="w-full">
                 <Image
                   src={`/${item}.png`}
@@ -114,8 +114,8 @@ const ProductListing = () => {
                   className="w-full h-auto object-cover transition-transform duration-300 ease-in-out hover:scale-105"
                 />
                 <div className="mt-4 text-[#2A254B]">
-                  <p className="py-2">{item === 'chair' ? 'The Dendy Chair' : `The ${item}`}</p>
-                  <p>£{item === 'chair2' ? 250 : item === 'Rustic Vase Set' ? 155 : 125}</p>
+                  <p className="py-2">{item === 'chair' ? 'The Dandy Chair' : `The ${item}`}</p>
+                  <p>£{item === 'chair' ? 250 : 125}</p>
                 </div>
               </div>
             ))}
@@ -148,3 +148,7 @@ const ProductListing = () => {
 };
 
 export default ProductListing;
+
+
+
+
