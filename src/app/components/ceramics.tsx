@@ -1,5 +1,7 @@
-import Image from 'next/image'
-import React from 'react'
+
+
+import Image from 'next/image';
+import React from 'react';
 
 const Ceramics = () => {
   return (
@@ -21,7 +23,7 @@ const Ceramics = () => {
                 className="w-full h-[80%] object-cover transition-transform duration-300 ease-in-out hover:scale-105 hover:translate-y-1"
               />
               <div className="mt-4 text-[#2A254B]">
-                <p className="py-2">The Dandy chair</p>
+                <p className="py-2 font-semibold">The Dandy chair</p>
                 <p>£250</p>
               </div>
             </div>
@@ -36,7 +38,7 @@ const Ceramics = () => {
                 className="w-full h-[80%] object-cover transition-transform duration-300 ease-in-out hover:scale-105 hover:translate-y-1"
               />
               <div className="mt-4 text-[#2A254B]">
-                <p className="py-2">Rustic Vase Set</p>
+                <p className="py-2 font-semibold">Rustic Vase Set</p>
                 <p>£155</p>
               </div>
             </div>
@@ -51,7 +53,7 @@ const Ceramics = () => {
                 className="w-full h-[80%] object-cover transition-transform duration-300 ease-in-out hover:scale-105 hover:translate-y-1"
               />
               <div className="mt-4 text-[#2A254B]">
-                <p className="py-2">The Silky Vase</p>
+                <p className="py-2 font-semibold">The Silky Vase</p>
                 <p>£125</p>
               </div>
             </div>
@@ -66,23 +68,22 @@ const Ceramics = () => {
                 className="w-full h-[80%] object-cover transition-transform duration-300 ease-in-out hover:scale-105 hover:translate-y-1"
               />
               <div className="mt-4 text-[#2A254B]">
-                <p className="py-2">The Lucky Lamp</p>
+                <p className="py-2 font-semibold">The Lucky Lamp</p>
                 <p>£399</p>
-                
               </div>
             </div>
           </div>
 
           {/* View Collection Button */}
           <div className="my-10 flex justify-center items-center">
-            <button className="bg-[#F9F9F9] py-4 px-6 rounded-[5px] text-[#2A254B]">
+            <button className="bg-[#F9F9F9] py-4 px-6 rounded-[5px] text-[#2A254B] transition-all duration-200 ease-in-out hover:bg-[#2A254B] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#2A254B] focus:ring-offset-2">
               View collection
             </button>
           </div>
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
 export default Ceramics;
