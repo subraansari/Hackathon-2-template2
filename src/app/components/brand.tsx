@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { TbTruckDelivery } from "react-icons/tb";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
@@ -17,30 +18,29 @@ const Brand = () => {
           {/* Features */}
           <div className="flex flex-col md:flex-row gap-8 mt-12 text-base md:text-lg">
             {/* Feature 1 */}
-            <div className="flex flex-col   md:w-[25%] p-4  rounded-lg">
+            <div className="flex flex-col md:w-[25%] p-4 rounded-lg">
               <TbTruckDelivery size={30} className="text-[#2A254B]" />
               <p className="py-4 font-semibold">Next day as standard</p>
               <p>Order before 3pm and get your order the next day as standard</p>
             </div>
 
             {/* Feature 2 */}
-            <div className="flex flex-col   md:w-[25%] p-4  rounded-lg">
-            <IoIosCheckmarkCircleOutline  size={30} className="text-[#2A254B]"/>
+            <div className="flex flex-col md:w-[25%] p-4 rounded-lg">
+              <IoIosCheckmarkCircleOutline size={30} className="text-[#2A254B]" />
               <p className="py-4 font-semibold">Made by true artisans</p>
-              <p>Handmade crafted goods made with <br /> real passion and craftmanship</p>
+              <p>Handcrafted goods made with real passion and craftsmanship</p>
             </div>
 
             {/* Feature 3 */}
-            <div className="flex flex-col   md:w-[25%] p-4  rounded-lg">
-            <GoCreditCard 
-            size={30} className="text-[#2A254B]"/>
+            <div className="flex flex-col md:w-[25%] p-4 rounded-lg">
+              <GoCreditCard size={30} className="text-[#2A254B]" />
               <p className="py-4 font-semibold">Unbeatable prices</p>
-              <p>For our materials and quality <br /> you won’t find better prices anywhere</p>
+              <p>For our materials and quality, you won’t find better prices anywhere</p>
             </div>
 
             {/* Feature 4 */}
-            <div className="flex flex-col   md:w-[25%] p-4  rounded-lg">
-            <LuSprout size={30} className="text-[#2A254B]"/>
+            <div className="flex flex-col md:w-[25%] p-4 rounded-lg">
+              <LuSprout size={30} className="text-[#2A254B]" />
               <p className="py-4 font-semibold">Recycled packaging</p>
               <p>We use 100% recycled packaging to ensure our footprint is manageable</p>
             </div>
