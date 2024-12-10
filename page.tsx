@@ -7,7 +7,6 @@ import Benefit from "./components/benefit";
 import Touch from "./components/touch";
 import ProductListing from "./productlisting/page";
 
-
 export default function Home() {
   return (
    <>
