@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <>
       <section aria-label="Hero Section">
-        <div className="w-full h-[704px] bg-white">
+        <div className="w-full h-[704px] bg-white flex justify-center items-center">
           <div className="px-4 md:px-8 py-12">
             <div className="flex flex-col md:flex-row items-center w-full md:w-[1280px] h-[584px] justify-center">
               {/* Text Section */}
